@@ -1,0 +1,11 @@
+".source.js":
+    "d3 queue":
+        prefix: "queue"
+        body: """
+        queue()
+            .defer(${1:d3.json}, '${2:}')
+            .defer(${3:d3.json}, '${4:}')
+            .await(function(error, ${5:file1}, ${6:file2}) {
+                console.log(${6:file1}, ${7:file1});
+            });
+        """

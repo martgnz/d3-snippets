@@ -1,0 +1,4 @@
+".source.js":
+    "d3 return data and index":
+        prefix: "fdi"
+        body: "function(d, i) { return ${1:};}"

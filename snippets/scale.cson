@@ -1,0 +1,8 @@
+".source.js":
+    "d3.scale":
+        prefix: "scale"
+        body: """
+        d3.scale.linear()
+            .domain([${1:}, ${2:}])
+            .range([${3:}, ${4:}]);
+        """

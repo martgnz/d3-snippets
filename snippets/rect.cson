@@ -1,0 +1,13 @@
+".source.js":
+    "SVG Rect":
+        prefix: "rect"
+        body: """
+        .enter().append('rect')
+            .attr('x', ${1:})
+            .attr('y', ${2:})
+            .attr('width', ${3:width})
+            .attr('height', ${4:height})
+            .attr('rx', ${5:0})
+            .attr('ry', ${6:0})
+            .style('fill', '${7:#111}');
+        """

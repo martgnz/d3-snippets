@@ -1,0 +1,4 @@
+".source.js":
+    "translate":
+        prefix: "translate"
+        body: ".attr('transform', 'translate(' + ${1:0} + ',' + ${2:0} + ')')"

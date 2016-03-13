@@ -1,0 +1,22 @@
+{
+  "name": "d3-snippets",
+  "main": "./lib/d3-snippets",
+  "version": "0.0.0",
+  "description": "A collection of d3 snippets. Accelerate your graphics!",
+  "keywords": [
+      "d3",
+      "snippets",
+      "javascript",
+      "data visualization"
+  ],
+  "activationCommands": {
+    "atom-workspace": "d3-snippets:toggle"
+  },
+  "repository": "https://github.com/martgnz/d3-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

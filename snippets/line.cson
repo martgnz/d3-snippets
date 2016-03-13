@@ -1,0 +1,11 @@
+".source.js":
+    "SVG Line":
+        prefix: "line"
+        body: """
+        .enter().append('line')
+            .attr('x1', ${1:})
+            .attr('y1', ${2:})
+            .attr('x2', ${3:})
+            .attr('y2', ${4:})
+            .style('stroke', '${5:#111}');
+        """

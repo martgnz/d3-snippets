@@ -1,0 +1,4 @@
+".source.js":
+    "style":
+        prefix: "style"
+        body: ".style('${1:}', '${2:}')"

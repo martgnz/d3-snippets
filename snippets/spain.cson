@@ -1,0 +1,13 @@
+".source.js":
+    "d3 map of spain":
+        prefix: "spain"
+        body: """
+        var projection = d3.geo.conicConformalSpain()
+            .scale(${1:3000})
+            .translate([${2:width / 2}, ${3:height / 2}]);
+
+        var path = d3.geo.path()
+            .projection(projection);
+
+        ${4:}
+        """

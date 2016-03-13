@@ -1,0 +1,11 @@
+".source.js":
+    "SVG Ellipse":
+        prefix: "ellipse"
+        body: """
+        .enter().append('ellipse')
+            .attr('cx', ${1:})
+            .attr('cy', ${2:})
+            .attr('rx', ${3:})
+            .attr('ry', ${4:})
+            .style('fill', '${5:#111}');
+        """

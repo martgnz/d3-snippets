@@ -1,0 +1,8 @@
+".source.js":
+    "d3.csv":
+        prefix: "csv"
+        body: """
+        d3.csv('${1:}', function(error, data) {
+            ${2:console.log(data);}
+        });
+        """

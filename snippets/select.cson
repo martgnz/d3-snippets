@@ -1,0 +1,4 @@
+".source.js":
+    "d3.select":
+        prefix: "sel"
+        body: "d3.select('${1:}')"

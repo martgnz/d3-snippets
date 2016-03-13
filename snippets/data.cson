@@ -1,0 +1,4 @@
+".source.js":
+    "d3 return data":
+        prefix: "fd"
+        body: "function(d) { return ${1:};}"

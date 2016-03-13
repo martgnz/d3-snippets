@@ -1,0 +1,7 @@
+".source.js":
+    "join":
+        prefix: "join"
+        body: """
+        d3.selectAll('${1:}')
+            .data(${2:})
+        """

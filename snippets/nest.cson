@@ -1,0 +1,8 @@
+".source.js":
+    "d3.nest":
+        prefix: "nest"
+        body: """
+        var nest = d3.nest()
+            .key(function(d) { return ${1:}; })
+            .entries(${2:});
+        """

@@ -1,0 +1,8 @@
+".source.js":
+    "d3.json":
+        prefix: "json"
+        body: """
+        d3.json('${1:}', function(error, data) {
+            ${2:console.log(data);}
+        });
+        """

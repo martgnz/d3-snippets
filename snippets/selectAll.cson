@@ -1,0 +1,4 @@
+".source.js":
+    "d3.selectAll":
+        prefix: "sela"
+        body: "d3.selectAll('${1:}')"

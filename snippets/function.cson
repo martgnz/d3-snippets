@@ -1,0 +1,4 @@
+".source.js":
+    "d3 function":
+        prefix: "fn"
+        body: "function() { return ${1:};}"

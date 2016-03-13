@@ -1,0 +1,10 @@
+".source.js":
+    "SVG Circle":
+        prefix: "circle"
+        body: """
+        .enter().append('circle')
+            .attr('cx', ${1:})
+            .attr('cy', ${2:})
+            .attr('r', ${3:})
+            .style('fill', '${1:#111}');
+        """
