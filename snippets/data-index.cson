@@ -1,4 +1,4 @@
 ".source.js":
-    "d3 return data and index":
+    "d3 anonymous function that returns the data and index":
         prefix: "fdi"
         body: "function(d, i) { return ${1:};}"
