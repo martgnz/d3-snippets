@@ -1,0 +1,4 @@
+".source.js":
+    "range":
+        prefix: "ran"
+        body: ".range[${1:}], [${2:}])"

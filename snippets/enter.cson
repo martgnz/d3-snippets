@@ -1,0 +1,4 @@
+".source.js":
+    "enter":
+        prefix: "ent"
+        body: ".enter()"
