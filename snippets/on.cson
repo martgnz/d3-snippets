@@ -1,0 +1,4 @@
+".source.js":
+    "on":
+        prefix: "on"
+        body: ".on('${1:}', ${2:})"

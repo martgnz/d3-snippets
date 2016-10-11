@@ -1,0 +1,4 @@
+".source.js":
+    "duration":
+        prefix: "dur"
+        body: ".duration(${1:})"
