@@ -1,4 +1,4 @@
 ".source.js":
     "domain":
         prefix: "dom"
-        body: ".domain([${1:}], [${2:}])"
+        body: ".domain([${1:}, ${2:}])"
