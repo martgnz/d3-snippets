@@ -1,4 +1,4 @@
 ".source.js":
     "attr":
         prefix: "attr"
-        body: "attr('${1:}', '${2:}')"
+        body: ".attr('${1:}', '${2:}')"
