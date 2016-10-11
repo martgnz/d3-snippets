@@ -1,4 +1,4 @@
-## [0.1.2] - Patch - 2016-10-11
+## [0.2.0] - Minor - 2016-10-11
 ### Added
 * New snippets contributed by @dephora for `domain`, `range`, `append`, `duration`, `enter` and `on`. Add `d3.svg.axis` snippet.
 
