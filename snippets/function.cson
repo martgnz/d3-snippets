@@ -1,4 +1,4 @@
 ".source.js":
-    "d3 anonymous function":
+    "Blank anonymous function":
         prefix: "fn"
         body: "function() { return ${1:};}"

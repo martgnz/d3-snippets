@@ -1,0 +1,6 @@
+".source.js":
+    "Curve shorthand":
+        prefix: "curve"
+        body: """
+        .curve(d3.${1:curveCatmullRom}.alpha(0.5));
+        """

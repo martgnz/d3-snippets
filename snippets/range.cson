@@ -1,4 +1,4 @@
 ".source.js":
-    "range":
+    "Set the scale range":
         prefix: "ran"
         body: ".range([${1:}, ${2:}])"

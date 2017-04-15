@@ -1,4 +1,4 @@
 ".source.js":
-    "d3 anonymous function that returns the data":
+    "Return the data":
         prefix: "fd"
         body: "function(d) { return ${1:};}"

@@ -1,8 +1,8 @@
 ".source.js":
-    "d3 queue":
+    "Create a queue to load multiple files":
         prefix: "queue"
         body: """
-        queue()
+        d3.queue()
             .defer(${1:d3.json}, '${2:}')
             .defer(${3:d3.json}, '${4:}')
             .await(function(error, ${5:file1}, ${6:file2}) {

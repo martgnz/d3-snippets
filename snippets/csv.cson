@@ -1,5 +1,5 @@
 ".source.js":
-    "d3.csv":
+    "Load a CSV file":
         prefix: "csv"
         body: """
         d3.csv('${1:}', function(error, data) {

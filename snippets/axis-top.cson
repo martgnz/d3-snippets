@@ -1,0 +1,6 @@
+".source.js":
+    "Top-oriented axis":
+        prefix: "axist"
+        body: """
+        d3.axisTop(${1:x});
+        """

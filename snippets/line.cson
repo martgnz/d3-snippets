@@ -1,5 +1,5 @@
 ".source.js":
-    "SVG Line":
+    "Create a SVG Line":
         prefix: "line"
         body: """
         .enter().append('line')

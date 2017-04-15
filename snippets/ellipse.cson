@@ -1,5 +1,5 @@
 ".source.js":
-    "SVG Ellipse":
+    "Create a SVG ellipse":
         prefix: "ellipse"
         body: """
         .enter().append('ellipse')

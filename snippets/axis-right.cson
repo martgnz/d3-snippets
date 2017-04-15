@@ -1,0 +1,6 @@
+".source.js":
+    "Right-oriented axis":
+        prefix: "axisr"
+        body: """
+        d3.axisRight(${1:y});
+        """

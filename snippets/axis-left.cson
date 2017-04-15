@@ -1,0 +1,6 @@
+".source.js":
+    "Left-oriented axis":
+        prefix: "axisl"
+        body: """
+        d3.axisLeft(${1:y});
+        """

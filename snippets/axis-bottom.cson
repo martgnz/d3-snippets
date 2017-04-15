@@ -1,0 +1,6 @@
+".source.js":
+    "Bottom-oriented axis":
+        prefix: "axisb"
+        body: """
+        d3.axisBottom(${1:x});
+        """

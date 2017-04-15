@@ -1,4 +1,4 @@
 ".source.js":
-    "domain":
+    "Set the scale domain":
         prefix: "dom"
         body: ".domain([${1:}, ${2:}])"

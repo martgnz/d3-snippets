@@ -1,5 +1,5 @@
 ".source.js":
-    "SVG Rect":
+    "Create a SVG rect":
         prefix: "rect"
         body: """
         .enter().append('rect')

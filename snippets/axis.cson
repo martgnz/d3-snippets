@@ -1,8 +1,8 @@
 ".source.js":
-    "D3 axis":
+    "Create a SVG axis":
         prefix: "axis"
         body: """
-        d3.svg.axis()
+        d3.axis()
             .scale(${1:})
             .ticks(${2:})
             .orient('${3:}')

@@ -1,5 +1,5 @@
 ".source.js":
-    "d3.nest":
+    "Nest a dataset":
         prefix: "nest"
         body: """
         var nest = d3.nest()

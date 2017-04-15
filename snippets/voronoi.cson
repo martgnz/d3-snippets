@@ -1,0 +1,18 @@
+".source.js":
+    "Create a Voronoi diagram":
+        prefix: "voronoi"
+        body: """
+        var voronoi = d3.voronoi()
+            .x(function(d) {return x(d.${1:}); })
+            .y(function(d) {return y(d.${2:}); })
+            .extent([[0, 0], [${3:width}, ${4:height}]]);
+
+        var voronoiGroup = svg.append('g')
+            .attr('class', 'voronoi');
+
+        voronoiGroup.selectAll('path')
+            .data(voronoi.polygons(${5:}))
+            .enter().append('path')
+            .attr('d', function(d) { return d ? 'M' + d.join('L') + 'Z' : null; })
+
+        """

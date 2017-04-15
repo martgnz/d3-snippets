@@ -1,0 +1,8 @@
+".source.js":
+    "Line generator":
+        prefix: "lineg"
+        body: """
+        var line = d3.line()
+          .x(function(d) { return x(d.${1:}); })
+          .y(function(d) { return y(d.${2:}); });
+        """

@@ -1,21 +1,23 @@
 ".source.js":
-    "d3.locale":
+    "Set a default locale":
         prefix: "locale"
-        body: """
-        var d3.locale.${1:en_US} = d3.locale({
-          'decimal': '.',
-          'thousands': ',',
-          'grouping': [3],
-          'currency': ['\$', ''],
-          'dateTime': '%a %b %e %X %Y',
-          'date': '%m/%d/%Y',
-          'time': '%H:%M:%S',
-          'periods': ['AM', 'PM'],
-          'days': ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-          'shortDays': ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-          'months': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-          'shortMonths': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-        });
-
-        ${2:}
+        body: """        
+        var ${1:en_US} = {
+            'decimal': '.',
+            'thousands': ',',
+            'grouping': [3],
+            'currency': ['\$', ''],
+            'dateTime': '%a %b %e %X %Y',
+            'date': '%m/%d/%Y',
+            'time': '%H:%M:%S',
+            'periods': ['AM', 'PM'],
+            'days': ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+            'shortDays': ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+            'months': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            'shortMonths': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        }
+        
+        formatDefaultLocale(${2:en_US});
+        timeFormatDefaultLocale(${3:en_US});
+        
         """

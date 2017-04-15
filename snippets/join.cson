@@ -1,5 +1,5 @@
 ".source.js":
-    "join":
+    "Start with a data join":
         prefix: "join"
         body: """
         d3.selectAll('${1:}')

@@ -1,8 +1,8 @@
 ".source.js":
-    "d3.scale":
+    "Create a sample scale":
         prefix: "scale"
         body: """
-        d3.scale.linear()
-            .domain([${1:}, ${2:}])
-            .range([${3:}, ${4:}]);
+        d3.${1:scaleLinear}()
+            .domain([${2:}, ${3:}])
+            .range([${4:}, ${5:}]);
         """

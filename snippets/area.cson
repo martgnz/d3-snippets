@@ -1,0 +1,9 @@
+".source.js":
+    "Area generator":
+        prefix: "area"
+        body: """
+        var area = d3.area()
+            .x(function(d) { return x(d.${1:}); })
+            .y1(function(d) { return y(d.${2:}); })
+            .y0(y(0));
+        """
