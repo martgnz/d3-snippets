@@ -1,5 +1,5 @@
 # d3-snippets
-An [Atom](https://atom.io) package with D3v.4 snippets. Accelerate your graphics!
+An [Atom](https://atom.io) package with D3v4 snippets. Accelerate your graphics!
 
 Contributions are appreciated, if you miss a snippet feel free to create an issue or open a pull request.
 
