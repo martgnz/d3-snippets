@@ -1,5 +1,5 @@
 # d3-snippets
-An [Atom](https://atom.io) package with d3 snippets. Accelerate your graphics!
+An [Atom](https://atom.io) package with D3v.4 snippets. Accelerate your graphics!
 
 Contributions are appreciated, if you miss a snippet feel free to create an issue or open a pull request.
 
@@ -15,14 +15,13 @@ $ apm install d3-snippets
 A ton of nifty snippets are included:
 - Margin Convention
 - Data Join
-- Default values for d3 maps
-- Queue.js
-- d3.json
-- d3.csv
-- d3.locale
-- d3.nest
-- d3.select
-- d3.selectAll
+- d3-queue
+- d3-json
+- d3-csv
+- d3-locale
+- d3-nest
+- d3-select
+- d3-selectAll
 - Various SVG shapes (circle, rect, line, ellipse)
 
 ## Hacking
@@ -35,4 +34,4 @@ $ apm link
 ```
 
 ## Credit
-Nearly everything comes from [fabriotav](https://github.com/fabriciotav/d3-snippets-for-sublime-text-2) and [shancarter](https://github.com/shancarter/sublime-text-d3/) Sublime Text packages. I just did the porting!
+Most of the inspiration comes from [fabriotav](https://github.com/fabriciotav/d3-snippets-for-sublime-text-2)'s  and [shancarter](https://github.com/shancarter/sublime-text-d3/)'s Sublime Text packages.
