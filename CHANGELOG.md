@@ -1,3 +1,7 @@
+## [1.0.1] - Minor - 2017-05-14
+### Fixes
+* Fix semicolon on margin snippet.
+
 ## [1.0.0] - Major - 2017-04-15
 * Update to D3.v4.
 
