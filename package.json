@@ -1,9 +1,14 @@
 {
   "name": "d3-snippets",
   "main": "./lib/d3-snippets",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A collection of D3.v4 snippets. Accelerate your graphics!",
-  "keywords": ["d3", "snippets", "javascript", "data visualization"],
+  "keywords": [
+    "d3",
+    "snippets",
+    "javascript",
+    "data visualization"
+  ],
   "activationCommands": {
     "atom-workspace": "d3-snippets:toggle"
   },
