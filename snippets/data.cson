@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts, .source.tsx, .source.jsx":
     "Return the data":
         prefix: "fd"
         body: "function(d) { return ${1:};}"

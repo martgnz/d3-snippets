@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts, .source.tsx, .source.jsx":
     "Append a SVG with the margin convention":
         prefix: "margin"
         body: """

@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts, .source.tsx, .source.jsx":
     "Create the projection and path for a map":
         prefix: "geomap"
         body: """

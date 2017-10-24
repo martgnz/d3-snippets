@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts, .source.tsx, .source.jsx":
     "Top-oriented axis":
         prefix: "axist"
         body: """

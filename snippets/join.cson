@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts, .source.tsx, .source.jsx":
     "Start with a data join":
         prefix: "join"
         body: """

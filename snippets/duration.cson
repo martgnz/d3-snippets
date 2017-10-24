@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts, .source.tsx, .source.jsx":
     "Set the transition duration":
         prefix: "dur"
         body: ".duration(${1:})"

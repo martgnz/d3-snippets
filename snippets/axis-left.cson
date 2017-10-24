@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts, .source.tsx, .source.jsx":
     "Left-oriented axis":
         prefix: "axisl"
         body: """

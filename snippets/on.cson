@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts, .source.tsx, .source.jsx":
     "Listen for events on the selection":
         prefix: "on"
         body: ".on('${1:}', ${2:})"
