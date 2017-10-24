@@ -1,4 +1,24 @@
-## [1.0.1] - Minor - 2017-05-14
+## [1.1.0] - Minor - 2017-10-24
+### Added
+* Support for TypeScript and React scopes (`.ts`, `.tsx`, and `.jsx`).
+* New snippet to set the _x_.
+* New snippet to set the _y_.
+* New snippet to set the radius.
+* New snippet to add a class.
+* New snippet to add a group.
+* New snippet for `d3.extent`.
+* New snippet for `d3.scaleSequential`.
+* New snippet for sorting a dataset.
+* New snippets for customizing the stroke.
+* New snippets for customizing the fill.
+* New snippets for customizing the axis ticks.
+* New snippet to set the text.
+* New snippet to set the text anchor.
+
+### Fixes
+* Improve [d3-voronoi](https://github.com/d3/d3-voronoi) snippet.
+
+## [1.0.1] - Patch - 2017-05-14
 ### Fixes
 * Fix semicolon on margin snippet.
 
