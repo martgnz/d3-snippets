@@ -1,0 +1,4 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Set the element radius":
+        prefix: "r"
+        body: ".attr('r', ${1:5})"

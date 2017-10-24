@@ -1,0 +1,4 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Set the element stroke":
+        prefix: "stroke"
+        body: ".attr('stroke', '${1:black}')"

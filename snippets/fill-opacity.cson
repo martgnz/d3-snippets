@@ -1,0 +1,4 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Set the element fill opacity":
+        prefix: "fill-opacity"
+        body: ".attr('fill-opacity', ${1:0.5})"

@@ -1,0 +1,4 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Set the element stroke opacity":
+        prefix: "stroke-opacity"
+        body: ".attr('stroke-opacity', ${1:0.5})"

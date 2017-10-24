@@ -1,0 +1,4 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Set the text anchor":
+        prefix: "anchor"
+        body: ".attr('text-anchor', '${1:middle}')"

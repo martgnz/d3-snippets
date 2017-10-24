@@ -1,0 +1,4 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Set the element fill":
+        prefix: "fill"
+        body: ".attr('fill', '${1:none}')"

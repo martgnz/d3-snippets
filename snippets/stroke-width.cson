@@ -1,0 +1,4 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Set the element stroke width":
+        prefix: "stroke-width"
+        body: ".attr('stroke-width', ${1:1})"

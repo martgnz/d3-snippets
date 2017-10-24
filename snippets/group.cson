@@ -1,0 +1,8 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Create a SVG group":
+        prefix: "g"
+        body: """
+        svg
+            .append('g')
+            .attr('class', '${1:}')
+        """

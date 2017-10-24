@@ -1,0 +1,4 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Set the tick size":
+        prefix: "tickSize"
+        body: ".tickSize(${1:})"

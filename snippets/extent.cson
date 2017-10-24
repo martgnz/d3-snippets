@@ -1,0 +1,4 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Set the dataset extent":
+        prefix: "extent"
+        body: "d3.extent(${1:data}, function(d) { return d.${2:value}; });"
