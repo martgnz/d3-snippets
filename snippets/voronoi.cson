@@ -11,7 +11,7 @@
             .attr('class', 'voronoi');
 
         voronoiGroup.selectAll('path')
-            .data(voronoi.polygons(${5:}))
+            .data(voronoi.polygons(${5:data}))
             .enter().append('path')
             .attr('d', function(d) { return d ? 'M' + d.join('L') + 'Z' : null; })
 
