@@ -3,7 +3,7 @@ An [Atom](https://atom.io) package with [D3v4](https://d3js.org) snippets. Accel
 
 Contributions are appreciated, if you miss a snippet feel free to create an issue or open a pull request.
 
-![d3-snippets in action](https://cloud.githubusercontent.com/assets/1236790/13730058/c2121150-e944-11e5-85fb-2158f62e082d.gif)
+![d3-snippets in action](https://user-images.githubusercontent.com/1236790/32133645-8c62489a-bbd4-11e7-94e4-460b9480676e.gif)
 
 ## Install
 You can install it inside Atom (just search for `d3-snippets`) or via command line:
