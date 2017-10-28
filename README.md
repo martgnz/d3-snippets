@@ -532,7 +532,7 @@ Set the y position.
 ## Hacking
 ```
 $ cd ~/.atom/packages
-$ git clone https://github.com/martgnz/d3-snippets.git
+$ git clone git@github.com:martgnz/d3-snippets.git
 $ cd d3-snippets
 $ apm install
 $ apm link
