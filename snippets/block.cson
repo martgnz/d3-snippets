@@ -1,0 +1,13 @@
+".text.html":
+  'Scaffold a block':
+    'prefix': 'block'
+    'body': '''
+    <!DOCTYPE html>
+    <style>
+    </style>
+    <body>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script>
+    ${1:}
+    </script>
+    '''

@@ -82,6 +82,21 @@ d3.axis()
     .orient('${3:}')
 ```
 
+<a name="block" href="#block">#</a> <code>block</code> [<>](snippets/block.cson "Source")
+
+Scaffold a block.
+
+```html
+<!DOCTYPE html>
+<style>
+</style>
+<body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+${1:}
+</script>
+```
+
 <a name="circle" href="#circle">#</a> <code>circle</code> [<>](snippets/circle.cson "Source")
 
 Create a SVG circle.

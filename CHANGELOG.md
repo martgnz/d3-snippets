@@ -1,3 +1,6 @@
+## [1.2.0] - Minor - 2017-10-29
+* New snippet to scaffold blocks.
+
 ## [1.1.0] - Minor - 2017-10-24
 ### Added
 * Support for TypeScript and React scopes (`.ts`, `.tsx`, and `.jsx`).
