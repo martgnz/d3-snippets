@@ -1,6 +1,6 @@
 ".text.html":
   'Scaffold a block':
-    'prefix': 'block'
+    'prefix': 'createblock'
     'body': '''
     <!DOCTYPE html>
     <style>
