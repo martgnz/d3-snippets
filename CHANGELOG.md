@@ -1,3 +1,6 @@
+## [1.2.1] - Path - 2017-11-01
+* Change block snippet shorthand to `createblock` to prevent a collision with the CSS display property.
+
 ## [1.2.0] - Minor - 2017-10-29
 * New snippet to scaffold blocks.
 

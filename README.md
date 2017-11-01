@@ -82,7 +82,7 @@ d3.axis()
     .orient('${3:}')
 ```
 
-<a name="block" href="#block">#</a> <code>block</code> [<>](snippets/block.cson "Source")
+<a name="createblock" href="#createblock">#</a> <code>createblock</code> [<>](snippets/block.cson "Source")
 
 Scaffold a block.
 
