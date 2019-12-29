@@ -1,3 +1,10 @@
+## [2.0.0] - Major - 2019-12-29
+* Switch to d3v5, this only means changing the way `d3.json` and `d3.csv` work.
+* Rewritten the snippets using ES2015.
+* New snippet for using `Promise.all` to load files. This is the way to do it now as d3-queue is no longer recommended.
+* New snippet for `d3.max`.
+* New snippet for `d3.min`.
+
 ## [1.2.1] - Path - 2017-11-01
 * Change block snippet shorthand to `createblock` to prevent a collision with the CSS display property.
 
