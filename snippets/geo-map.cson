@@ -2,10 +2,10 @@
     "Create the projection and path for a map":
         prefix: "geomap"
         body: """
-        var projection = d3.${1:geoMercator}()
+        const projection = d3.${1:geoMercator}()
             .fitSize([${2:width}, ${3:height}], ${4:land});
 
-        var path = d3.geoPath()
+        const path = d3.geoPath()
             .projection(projection);
         ${7:}
         """

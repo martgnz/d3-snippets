@@ -1,0 +1,4 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Get the maximum value":
+        prefix: "max"
+        body: "d3.max(${1:data}, d => d.${2:value});"

@@ -1,4 +1,4 @@
 ".source.js, .source.ts, .source.tsx, .source.jsx":
     "Translate the element":
         prefix: "translate"
-        body: ".attr('transform', 'translate(' + ${1:0} + ',' + ${2:0} + ')')"
+        body: ".attr('transform', `translate(${${1:0}},${${2:0}})`)"

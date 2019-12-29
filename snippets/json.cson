@@ -2,7 +2,7 @@
     "Load a JSON file":
         prefix: "json"
         body: """
-        d3.json('${1:}', function(error, data) {
-            ${2:console.log(data);}
+        d3.json('${1:}').then(data => {
+          ${2:console.log(data);}
         });
         """

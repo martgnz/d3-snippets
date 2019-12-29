@@ -1,8 +1,8 @@
 ".source.js, .source.ts, .source.tsx, .source.jsx":
     "Set a default locale":
         prefix: "locale"
-        body: """        
-        var ${1:en_US} = {
+        body: """
+        const ${1:en_US} = {
             'decimal': '.',
             'thousands': ',',
             'grouping': [3],
@@ -16,8 +16,8 @@
             'months': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
             'shortMonths': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
         }
-        
+
         formatDefaultLocale(${2:en_US});
         timeFormatDefaultLocale(${3:en_US});
-        
+
         """

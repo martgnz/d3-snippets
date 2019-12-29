@@ -1,9 +1,9 @@
 # d3-snippets
-An [Atom](https://atom.io) package with [D3v4](https://d3js.org) snippets. Accelerate your graphics!
+An [Atom](https://atom.io) package with [D3v5](https://d3js.org) snippets. Accelerate your graphics!
 
 Contributions are appreciated, if you miss a snippet feel free to create an issue or open a pull request.
 
-![d3-snippets in action](https://user-images.githubusercontent.com/1236790/32133645-8c62489a-bbd4-11e7-94e4-460b9480676e.gif)
+![d3-snippets in action](https://user-images.githubusercontent.com/1236790/71555299-fc69b300-2a2a-11ea-85c0-80b6dbf4d0c9.gif)
 
 ## Install
 You can install it inside Atom (just search for `d3-snippets`) or via command line:
@@ -12,6 +12,7 @@ $ apm install d3-snippets
 ```
 
 ## Reference
+
 <a name="app" href="#app">#</a> <code>app</code> [<>](snippets/append.cson "Source")
 
 Append something.
@@ -25,9 +26,9 @@ Append something.
 Area generator.
 
 ```js
-var area = d3.area()
-    .x(function(d) { return x(d.${1:}); })
-    .y1(function(d) { return y(d.${2:}); })
+const area = d3.area()
+    .x(d => x(d.${1:}))
+    .y1(d => y(d.${2:}))
     .y0(y(0));
 ```
 
@@ -86,12 +87,12 @@ d3.axis()
 
 Scaffold a block.
 
-```html
+```js
 <!DOCTYPE html>
 <style>
 </style>
 <body>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 <script>
 ${1:}
 </script>
@@ -123,8 +124,8 @@ Set the element class.
 Load a CSV file.
 
 ```js
-d3.csv('${1:}', function(error, data) {
-    ${2:console.log(data);}
+d3.csv('${1:}').then(data => {
+  ${2:console.log(data);}
 });
 ```
 
@@ -141,7 +142,7 @@ Curve shorthand.
 Return the data and the index.
 
 ```js
-function(d, i) { return ${1:};}
+(d, i) => ${1:}
 ```
 
 <a name="fd" href="#fd">#</a> <code>fd</code> [<>](snippets/data.cson "Source")
@@ -149,7 +150,7 @@ function(d, i) { return ${1:};}
 Return the data.
 
 ```js
-function(d) { return ${1:};}
+d => ${1:}
 ```
 
 <a name="dom" href="#dom">#</a> <code>dom</code> [<>](snippets/domain.cson "Source")
@@ -194,7 +195,7 @@ Enter the data.
 Set the dataset extent.
 
 ```js
-d3.extent(${1:data}, function(d) { return d.${2:value}; });
+d3.extent(${1:data}, d => d.${2:value});
 ```
 
 <a name="fill-opacity" href="#fill-opacity">#</a> <code>fill-opacity</code> [<>](snippets/fill-opacity.cson "Source")
@@ -218,7 +219,7 @@ Set the element fill.
 Blank anonymous function.
 
 ```js
-function() { return ${1:};}
+() => ${1:}
 ```
 
 <a name="geomap" href="#geomap">#</a> <code>geomap</code> [<>](snippets/geo-map.cson "Source")
@@ -226,10 +227,10 @@ function() { return ${1:};}
 Create the projection and path for a map.
 
 ```js
-var projection = d3.${1:geoMercator}()
+const projection = d3.${1:geoMercator}()
     .fitSize([${2:width}, ${3:height}], ${4:land});
 
-var path = d3.geoPath()
+const path = d3.geoPath()
     .projection(projection);
 ${7:}
 ```
@@ -258,8 +259,8 @@ d3.selectAll('${1:}')
 Load a JSON file.
 
 ```js
-d3.json('${1:}', function(error, data) {
-    ${2:console.log(data);}
+d3.json('${1:}').then(data => {
+  ${2:console.log(data);}
 });
 ```
 
@@ -268,9 +269,9 @@ d3.json('${1:}', function(error, data) {
 Line generator.
 
 ```js
-var line = d3.line()
-  .x(function(d) { return x(d.${1:}); })
-  .y(function(d) { return y(d.${2:}); });
+const line = d3.line()
+  .x(d => x(d.${1:}))
+  .y(d => y(d.${2:}));
 ```
 
 <a name="line" href="#line">#</a> <code>line</code> [<>](snippets/line.cson "Source")
@@ -291,7 +292,7 @@ Create a SVG Line.
 Set a default locale.
 
 ```js
-var ${1:en_US} = {
+const ${1:en_US} = {
     'decimal': '.',
     'thousands': ',',
     'grouping': [3],
@@ -316,11 +317,11 @@ timeFormatDefaultLocale(${3:en_US});
 Append a SVG with the margin convention.
 
 ```js
-var margin = {top: ${1:20}, right: ${2:10}, bottom: ${3:20}, left: ${4:10}},
+const margin = {top: ${1:20}, right: ${2:10}, bottom: ${3:20}, left: ${4:10}},
     width = ${5:960} - margin.left - margin.right,
     height = ${6:500} - margin.top - margin.bottom;
 
-var svg = d3.select('${7:body}').append('svg')
+const svg = d3.select('${7:body}').append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
   .append('g')
@@ -329,13 +330,29 @@ var svg = d3.select('${7:body}').append('svg')
 ${8:}
 ```
 
+<a name="max" href="#max">#</a> <code>max</code> [<>](snippets/max.cson "Source")
+
+Get the maximum value.
+
+```js
+d3.max(${1:data}, d => d.${2:value});
+```
+
+<a name="min" href="#min">#</a> <code>min</code> [<>](snippets/min.cson "Source")
+
+Get the minimum value.
+
+```js
+d3.min(${1:data}, d => d.${2:value});
+```
+
 <a name="nest" href="#nest">#</a> <code>nest</code> [<>](snippets/nest.cson "Source")
 
 Nest a dataset.
 
 ```js
-var nest = d3.nest()
-    .key(function(d) { return ${1:}; })
+const nest = d3.nest()
+    .key(d => d.${1:})
     .entries(${2:});
 ```
 
@@ -345,6 +362,19 @@ Listen for events on the selection.
 
 ```js
 .on('${1:}', ${2:})
+```
+
+<a name="queue-promise" href="#queue-promise">#</a> <code>queue-promise</code> [<>](snippets/queue-promise.cson "Source")
+
+Load multiple files using a Promise.
+
+```js
+Promise.all([
+    d3.${1:json}('${2:}'),
+    d3.${3:json}('${4:}')
+  ]).then([${5:file1}, ${6:file2}] => {
+    console.log(${7:file1}, ${8:file1});
+  })
 ```
 
 <a name="queue" href="#queue">#</a> <code>queue</code> [<>](snippets/queue.cson "Source")
@@ -431,9 +461,7 @@ d3.selectAll('${1:}')
 Sort a dataset.
 
 ```js
-${1:data}.sort(function(a, b) {
-    return ${2:a}.${3:value} - ${4:b}.${5:value};
-});
+${1:data}.sort((a, b) => ${2:a}.${3:value} - ${4:b}.${5:value});
 ```
 
 <a name="stroke-opacity" href="#stroke-opacity">#</a> <code>stroke-opacity</code> [<>](snippets/stroke-opacity.cson "Source")
@@ -505,7 +533,7 @@ Set the tick values.
 Translate the element.
 
 ```js
-.attr('transform', 'translate(' + ${1:0} + ',' + ${2:0} + ')')
+.attr('transform', `translate(${${1:0}},${${2:0}})`)
 ```
 
 <a name="voronoi" href="#voronoi">#</a> <code>voronoi</code> [<>](snippets/voronoi.cson "Source")
@@ -513,18 +541,18 @@ Translate the element.
 Create a Voronoi diagram.
 
 ```js
-var voronoi = d3.voronoi()
-    .x(function(d) {return x(d.${1:}); })
-    .y(function(d) {return y(d.${2:}); })
+const voronoi = d3.voronoi()
+    .x(d => x(d.${1:}))
+    .y(d => y(d.${2:}))
     .extent([[0, 0], [${3:width}, ${4:height}]]);
 
-var voronoiGroup = svg.append('g')
+const voronoiGroup = svg.append('g')
     .attr('class', 'voronoi');
 
 voronoiGroup.selectAll('path')
     .data(voronoi.polygons(${5:data}))
     .enter().append('path')
-    .attr('d', function(d) { return d ? 'M' + d.join('L') + 'Z' : null; })
+    .attr('d', d => d ? 'M' + d.join('L') + 'Z' : null)
 
 ```
 

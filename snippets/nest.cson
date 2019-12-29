@@ -2,7 +2,7 @@
     "Nest a dataset":
         prefix: "nest"
         body: """
-        var nest = d3.nest()
-            .key(function(d) { return ${1:}; })
+        const nest = d3.nest()
+            .key(d => d.${1:})
             .entries(${2:});
         """

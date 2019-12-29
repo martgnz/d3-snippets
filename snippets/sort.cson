@@ -2,7 +2,5 @@
     "Sort a dataset":
         prefix: "sort"
         body: """
-        ${1:data}.sort(function(a, b) {
-            return ${2:a}.${3:value} - ${4:b}.${5:value};
-        });
+        ${1:data}.sort((a, b) => ${2:a}.${3:value} - ${4:b}.${5:value});
         """

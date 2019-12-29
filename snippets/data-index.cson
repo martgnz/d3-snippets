@@ -1,4 +1,4 @@
 ".source.js, .source.ts, .source.tsx, .source.jsx":
     "Return the data and the index":
         prefix: "fdi"
-        body: "function(d, i) { return ${1:};}"
+        body: "(d, i) => ${1:}"

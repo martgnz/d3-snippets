@@ -2,7 +2,7 @@
     "Load a CSV file":
         prefix: "csv"
         body: """
-        d3.csv('${1:}', function(error, data) {
-            ${2:console.log(data);}
+        d3.csv('${1:}').then(data => {
+          ${2:console.log(data);}
         });
         """

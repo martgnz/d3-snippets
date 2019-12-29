@@ -1,4 +1,4 @@
 ".source.js, .source.ts, .source.tsx, .source.jsx":
     "Blank anonymous function":
         prefix: "fn"
-        body: "function() { return ${1:};}"
+        body: "() => ${1:}"

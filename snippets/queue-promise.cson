@@ -1,0 +1,11 @@
+".source.js, .source.ts, .source.tsx, .source.jsx":
+    "Load multiple files using a Promise":
+        prefix: "queue-promise"
+        body: """
+        Promise.all([
+            d3.${1:json}('${2:}'),
+            d3.${3:json}('${4:}')
+          ]).then([${5:file1}, ${6:file2}] => {
+            console.log(${7:file1}, ${8:file1});
+          })
+        """
